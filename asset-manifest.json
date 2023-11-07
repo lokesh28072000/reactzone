@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/reactzone/static/css/main.6cc8a033.css",
+    "main.js": "/reactzone/static/js/main.89559f85.js",
+    "static/js/787.425eb6ca.chunk.js": "/reactzone/static/js/787.425eb6ca.chunk.js",
+    "static/media/pexels-harun-tan-3980364.jpg": "/reactzone/static/media/pexels-harun-tan-3980364.ddda1d017bb811a84a1a.jpg",
+    "static/media/home_hero.png": "/reactzone/static/media/home_hero.f27d29f8fcca4a4cf393.png",
+    "static/media/homeimg2.png": "/reactzone/static/media/homeimg2.759d9fc0165ed4dc1954.png",
+    "index.html": "/reactzone/index.html",
+    "main.6cc8a033.css.map": "/reactzone/static/css/main.6cc8a033.css.map",
+    "main.89559f85.js.map": "/reactzone/static/js/main.89559f85.js.map",
+    "787.425eb6ca.chunk.js.map": "/reactzone/static/js/787.425eb6ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6cc8a033.css",
+    "static/js/main.89559f85.js"
+  ]
+}
