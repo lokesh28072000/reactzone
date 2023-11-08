@@ -13,13 +13,29 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import homeimg1 from "./home_hero.png";
 import homeimg2 from "./homeimg2.png";
+import homeimg3 from "./minimal_dashboard_home.png";
 
 function Home() {
-  const [showText, setShowText] = useState(false);
+  const [showText1, setShowText1] = useState(false);
+  const [showText2, setShowText2] = useState(false);
+  const [showText3, setShowText3] = useState(false);
+  const [showText4, setShowText4] = useState(false);
 
-  const handleIconClick = () => {
-    setShowText(!showText);
+  const handleIconClick1 = () => {
+    setShowText1(!showText1);
   };
+
+  const handleIconClick2 = () => {
+    setShowText2(!showText2);
+  };
+
+  const handleIconClick3 = () => {
+    setShowText3(!showText3);
+  };
+  const handleIconClick4 = () => {
+    setShowText4(!showText4);
+  };
+
   return (
     <>
       <Container className="containerhome1">
@@ -126,7 +142,7 @@ function Home() {
                 <FontAwesomeIcon icon={faRotateRight} />
               </Button>
               <Card.Title>Middle Buttons</Card.Title>
-              <Button variant="info" className="mb-2">
+              <Button variant="info" className="mb-2 gap">
                 Button 5
               </Button>
               <Button variant="warning" className="mb-2">
@@ -172,7 +188,7 @@ function Home() {
         </div>
       </Container>
 
-      <Container fluid className="containerhome4">
+      <Container className="containerhome4">
         <div className="text-center">
           <p>PROFESSIONAL KIT</p>
           <h1>For Designer</h1>
@@ -193,6 +209,14 @@ function Home() {
           <Card style={{ width: "18rem" }}>
             <Card.Body>
               <Card.Title>Basic Plan</Card.Title>
+              <ul className="custom-list">
+            <li>One end products</li>
+            <li>12 month update</li>
+            <li>24x7 support</li>
+            <li>only for six months</li>
+            <li style={{color:"GrayText"}}><del>design resource</del></li>
+            <li  style={{color:"GrayText"}}><del>Commericial Applications</del></li>
+          </ul>
               <Card.Text>$9.99</Card.Text>
               <Button className="buttonmain bg-black border-black">
                 Select
@@ -202,6 +226,14 @@ function Home() {
           <Card style={{ width: "18rem" }}>
             <Card.Body>
               <Card.Title>Standard Plan</Card.Title>
+              <ul className="custom-list">
+            <li>One end products</li>
+            <li>12 month update</li>
+            <li>24x7 support</li>
+            <li>only for six months</li>
+            <li>design resource</li>
+            <li  style={{color:"GrayText"}}><del>Commericial Applications</del></li>
+          </ul>
               <Card.Text>$19.99</Card.Text>
               <Button className="buttonmain bg-black border-black">
                 Select
@@ -211,6 +243,14 @@ function Home() {
           <Card style={{ width: "18rem" }}>
             <Card.Body>
               <Card.Title>Premium Plan</Card.Title>
+              <ul className="custom-list">
+            <li>One end products</li>
+            <li>12 month update</li>
+            <li>24x7 support</li>
+            <li>only for six months</li>
+            <li>design resource</li>
+            <li>Commericial Applications</li>
+          </ul>
               <Card.Text>$29.99</Card.Text>
               <Button className="buttonmain bg-black border-black">
                 Select
@@ -221,33 +261,142 @@ function Home() {
       </Container>
 
       <Container fluid className="containerhome6 text-center">
-        <h1>Frequently Asked Questions</h1>
-        <p>Here are some common questions about our product.</p>
-
-        <div>
-          <div style={{ display: "flex", alignItems: "center" }}>
-            <p>What is inside the product packages </p>
-            <FontAwesomeIcon
-              icon={faPlus}
-              style={{ marginLeft: "10px", cursor: "pointer" }}
-              onClick={handleIconClick}
-            />
-          </div>
-          {showText && (
-            <p
-              style={{
-                marginTop: "10px",
-                backgroundColor: "#f9f9f9",
-                padding: "10px",
-                border: "1px solid #ddd",
-              }}
-            >
-              Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere
-              vulputate arcu. Donec mi odio, faucibus at, scelerisque quis,
-              convallis in,
-            </p>
-          )}
+      <h1>Frequently Asked Questions</h1>
+      <br />
+      <h5>Here are some common questions about our product.</h5>
+<br />
+      <div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <h5>What is inside the product packages?</h5>
+          <FontAwesomeIcon
+            icon={faPlus}
+            style={{ marginLeft: "10px", cursor: "pointer" }}
+            onClick={handleIconClick1}
+          />
         </div>
+        {showText1 && (
+          <p
+            style={{
+              marginTop: "10px",
+              backgroundColor: "#f9f9f9",
+              padding: "10px",
+              border: "1px solid #ddd",
+            }}
+          >
+             Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere
+            vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis
+            in,
+          </p>
+        )}
+      </div>
+<br />
+      {/* Repeat the following block for each question */}
+      {/* Question 2 */}
+      <div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <h5>Design assets are included</h5>
+          <FontAwesomeIcon
+            icon={faPlus}
+            style={{ marginLeft: "10px", cursor: "pointer" }}
+            onClick={handleIconClick2}
+          />
+        </div>
+        {showText2 && (
+          <p
+            style={{
+              marginTop: "10px",
+              backgroundColor: "#f9f9f9",
+              padding: "10px",
+              border: "1px solid #ddd",
+            }}
+          >
+            Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere
+            vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis
+            in,
+          </p>
+        )}
+      </div>
+<br />
+      {/* Repeat the above block for the remaining questions */}
+
+
+     {/* ----------- question3-------- */}
+     <div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <h5> How can i upgrade plan.</h5>
+          <FontAwesomeIcon
+            icon={faPlus}
+            style={{ marginLeft: "10px", cursor: "pointer" }}
+            onClick={handleIconClick3}
+          />
+        </div>
+        {showText3 && (
+          <p
+            style={{
+              marginTop: "10px",
+              backgroundColor: "#f9f9f9",
+              padding: "10px",
+              border: "1px solid #ddd",
+            }}
+          >
+            Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere
+            vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis
+            in,
+          </p>
+        )}
+      </div>
+      <br />
+
+      {/* -------------------question4-------------------- */}
+
+      <div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <h5>How can i request support</h5>
+          <FontAwesomeIcon
+            icon={faPlus}
+            style={{ marginLeft: "10px", cursor: "pointer" }}
+            onClick={handleIconClick4}
+          />
+        </div>
+        {showText4 && (
+          <p
+            style={{
+              marginTop: "10px",
+              backgroundColor: "#f9f9f9",
+              padding: "10px",
+              border: "1px solid #ddd",
+            }}
+          >
+            Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere
+            vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis
+            in,
+          </p>
+        )}
+      </div>
+
+
+    </Container>
+
+{/* ----------------lastcontainer------------------ */}
+
+    <Container className="containerhome1">
+        <img src={homeimg3} alt="img" />
+        <h1>
+        Looking For a Dashboard Template?
+        </h1>
+
+        <br></br>
+        <p>PERFECT COMBINATION</p>
+        <br></br>
+        <p>
+        Minimal UI Kit is a professional dashboard used by many of our clients.
+        </p>
+        <br />
+        <br />
+        <Button className="buttonmain bg-white text-black border-black">
+          Minimalist Dashboard
+          {/* <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> */}
+        </Button>
       </Container>
     </>
   );

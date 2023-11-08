@@ -1,0 +1,49 @@
+.container1about{
+    margin-top: 100px;
+    background-color: rgb(227, 232, 227);
+    border-radius: 2.5%;
+    height: 300px;
+}
+.container1about p{
+    margin-top: 30px;
+}
+.taglogo {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 14px;
+}
+
+.container2about{
+    margin-top: 100px;
+}
+.container2about h2{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.containerdivabout {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .containerdivabout img.centered-image {
+    display: block;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5%;
+  }
+  
+
+  .container3about{
+    margin: 100px 0 100px;
+    background-color: rgb(227, 232, 227);
+    border-radius: 2.5%;
+  }
+
+  .container3about p{
+    margin: 20px 0 20px;
+  }
+

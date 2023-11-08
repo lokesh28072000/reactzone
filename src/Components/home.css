@@ -12,7 +12,7 @@
     background-color: rgb(227, 232, 227);
     border-radius: 2.5%;
     height: 600px;
-    margin: 50px 0 100px;
+    margin: 70px 0 100px;
 }
 
 .containerhome1 h1{
@@ -161,4 +161,46 @@
 
   }
   
+  .containerhome6 h1{
+      margin-bottom: 50px;
+  }
   
+  .custom-list {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .custom-list li::before {
+    content: '●'; /* Bullet point character */
+    color: orangered; /* Change the color to orange */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    line-height: 3;
+  }
+  
+
+   .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer p {
+    margin: 5px 0;
+    
+  }
+
+  .social-media {
+    grid-column: 1 / -1;
+    margin: 20px 0;
+  }
+
+  .social-media a {
+    margin: 0 10px;
+    color: orangered;
+    text-decoration: none;
+  }
