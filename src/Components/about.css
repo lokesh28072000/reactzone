@@ -23,19 +23,29 @@
     margin-top: 100px;
 }
 
-.containerdivabout {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .containerdivabout img.centered-image {
+  .container2about img{
     display: block;
-    width: 900px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2.5%;
   }
-  
+
+  @media(max-width:1100px){
+    .container2about img{
+        width: 600px;
+    }
+  }
+  @media(max-width:800px){
+    .container2about img{
+        width: 400px;
+    }
+  }
+  @media(max-width:500px){
+    .container2about img{
+        width: 280px;
+    }
+  }
 
   .container3about{
     margin: 100px 0 100px;
