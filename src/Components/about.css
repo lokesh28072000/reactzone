@@ -57,3 +57,26 @@
     margin: 20px 0 20px;
   }
 
+.teamimg img{
+  width: 600px;
+  border-radius: 2%;
+}
+
+@media(max-width:1243px){
+  .teamimg img{
+    width: 500px;
+    border-radius: 2%;
+  }
+}
+@media(max-width:966px){
+  .teamimg img{
+    width: 350px;
+    border-radius: 2%;
+  }
+}
+@media(max-width:963px){
+  .teamimg img{
+    width: 250px;
+    border-radius: 2%;
+  }
+}

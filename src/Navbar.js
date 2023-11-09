@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { Container,Navbar,NavDropdown,Nav,Form,Button,Offcanvas} from 'react-bootstrap';
+import { Container,Navbar,NavDropdown,Nav,Form,Button,Offcanvas, FormControl} from 'react-bootstrap';
 import { faGear, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 function Navbarmain() {
+  const [showSearchBar, setShowSearchBar] = useState(false);
+
+  const handleSearchClick = () => {
+    setShowSearchBar(true);
+  };
+
+  const handleCloseClick = () => {
+    setShowSearchBar(false);
+  };
   return (
     <>
     <Container>
@@ -34,11 +43,22 @@ function Navbarmain() {
           <Nav.Link as={Link} to = "/Contact" className='navlinks'>Contact</Nav.Link>
           </Nav>
     
-          <Nav>
-          <FontAwesomeIcon icon={faMagnifyingGlass}  className='fonticonsnav'/>
-          <FontAwesomeIcon icon={faGear}  className='fonticonsnav'/>
-            <Button className='buttonmain bg-black border-black'>Buy Now</Button>
-          </Nav>
+        <Nav>
+          <FontAwesomeIcon icon={faMagnifyingGlass}  className='fonticonsnav' onClick={handleSearchClick}/>
+          {showSearchBar && (
+          <div className="mt-3">
+            <Form inline>
+              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+              {/* <Button variant="outline-success">Search</Button> */}
+            </Form>
+            <Button variant="link" onClick={handleCloseClick} className="mt-2">
+              Close
+            </Button>
+          </div>
+        )}
+          <FontAwesomeIcon icon={faGear}  className='fonticonsnav  spinning-icon'/>
+            <Button className='buttonmain bg-black border-black navbuttonheight'>Buy Now</Button>
+         </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

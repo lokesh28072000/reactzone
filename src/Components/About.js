@@ -1,11 +1,12 @@
 import React from "react";
-import { Carousel, Container } from "react-bootstrap";
+import { Button, Card, Carousel, Container } from "react-bootstrap";
 import "./about.css";
 import "../App.css";
 import aboutimg1 from "./pexels-dominika-roseclay-688668.jpg";
 import aboutimg2 from "./newpaper.jpg"
 import aboutimg3 from './aboutimg3.jpg'
 import aboutimg5 from './aboutimg5.jpg'
+import aboutimg6 from './aboutteamimg.jpg'
 function About() {
   return (
     <>
@@ -114,6 +115,29 @@ function About() {
       </Carousel.Item>
     </Carousel>
       </Container>
+      <br />
+      <br />
+
+
+      <Container className="container5about">
+      <Card className="text-center col-sm-12 col-md-8 col-lg-8">
+      <Card.Header> <a href="/" className="taglogo">
+            Zonel<span>.</span>
+            <sup>v2.0</sup>
+          </a></Card.Header>
+      <Card.Body>
+        <Card.Title>Meet <span>Our</span>Team</Card.Title>
+        <Card.Text>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rerum sit mollitia quidem quis error, eligendi ad alias amet voluptas itaque rem! Harum, maxime sapiente facilis eligendi est officiis porro?
+        </Card.Text>
+        <div className="teamimg">
+          <img src={aboutimg6} alt="img" />
+        </div>
+      </Card.Body>
+      
+    </Card>
+      </Container>
+      <br />
       <br />
     </>
   );
